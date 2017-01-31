@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo3同时发布到多个仓库 | 小耗子杰瑞 | JERRY SHAO</title>
+  <meta name="author" content="JERRY SHAO">
+  
+  <meta name="description" content="博客很久没有更新，最近看到Hexo的最新版本已经是3打头了，决定升级继续写博客。然而升级的过程像大部分新产品一样，新特性往往用不到，真正用到的坑又多了一些。折腾了近一周，终于又可以像往常一样使用 Hexo g -d 同时发布到两个git平台。下面记录一下遇到的坑和solution。
+Problem 1. Hexo deployer报错
+文章Generate正常，进行Deploy时报错。1ERROR Deployer not found: git
+Solution:1npm install hexo-deployer-git --save
+具体可以查看Hexo3 Wiki和Issue#1013。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Hexo3同时发布到多个仓库"/>
+  <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="小耗子杰瑞 | JERRY SHAO" type="application/atom+xml">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-89591790-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+  <header id="header" class='normal_mode'>
+    <nav id="main-nav">
+  <ul class='container'>
+    
+      <li><a href="/">Jerry Shao</a></li>
+    
+      <li><a href="/notes">Notes</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+  </header>
+  <div id="content" class="container">
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2016-03-21T18:03:28.000Z"><a href="/2016/03/21/Hexo3同时发布到多个仓库/">Mon, Mar 21 2016, 6:03:28 pm</a></time>
+
+  
+    <h1 class="title">Hexo3同时发布到多个仓库</h1>
+  
+
+
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/Web/">Web</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/hexo/">hexo</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <p>博客很久没有更新，最近看到Hexo的最新版本已经是3打头了，决定升级继续写博客。然而升级的过程像大部分新产品一样，新特性往往用不到，真正用到的坑又多了一些。折腾了近一周，终于又可以像往常一样使用 <strong>Hexo g -d</strong> 同时发布到两个git平台。下面记录一下遇到的坑和solution。</p>
+<h4 id="Problem-1-Hexo-deployer报错"><a href="#Problem-1-Hexo-deployer报错" class="headerlink" title="Problem 1. Hexo deployer报错"></a>Problem 1. Hexo deployer报错</h4><hr>
+<p>文章Generate正常，进行Deploy时报错。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found: git</div></pre></td></tr></table></figure></p>
+<p><strong>Solution:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>具体可以查看<a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0" target="_blank" rel="external">Hexo3 Wiki</a>和<a href="https://github.com/hexojs/hexo/issues/1013" target="_blank" rel="external">Issue#1013</a>。<br><a id="more"></a></p>
+<h4 id="Problem-2-无法同时发布到多个git平台"><a href="#Problem-2-无法同时发布到多个git平台" class="headerlink" title="Problem 2. 无法同时发布到多个git平台"></a>Problem 2. 无法同时发布到多个git平台</h4><hr>
+<p>包括我在内的一部分人在使用Hexo时，是同时把文章发布到多个git平台的，即使用多个git pages服务。如：github pages和coding pages(原gitcafe pages服务)。然后将国内线路解析到coding pages上，将国外线路解析到github pages上，以保证访问速度和体验。<br>在升级Hexo3之后，同样遇到了文章Generate正常，进行Deploy时报错。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FATAL fatal: remote part of refspec is not a valid name in HEAD: master</div></pre></td></tr></table></figure></p>
+<p>在使用Hexo2时，同时发布到多个git平台一般会使用下面的_config.yml配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">    github: git@github.com:jerry-shao/jerry-shao.github.io.git, master</div><div class="line">    gitcafe: git@gitcafe.com:jerryshao/jerryshao.git, gitcafe-pages</div></pre></td></tr></table></figure></p>
+<p><strong>Solution</strong></p>
+<ol>
+<li>在迁移至coding pages服务后，需要在coding的项目页面手动开启pages服务。这里有一点改进就是coding的pages服务不限定branch的名称，可以自定义pages服务映射的branch。这里我们为了方便，将coding pages这边的branch也改成master。</li>
+<li>_config.yml中的deploy也与之前的写法不同，经过多次尝试，以下配置可以同时发布文章到多个平台。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">    github: git@github.com:jerry-shao/jerry-shao.github.io.git</div><div class="line">    coding: git@git.coding.net:jerry_shao/jerryshao.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>经过修改后使用 <strong>Hexo g -d</strong> 就可以同时发布到github和coding了。</p>
+
+      
+    </div>
+    <footer>
+      
+          
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <span class="jiathis_txt">分享到：</span>
+  <a class="jiathis_button_weixin">微信</a>
+  <a class="jiathis_button_tsina">新浪微博</a>
+  <a class="jiathis_button_renren">人人网</a>
+  <a class="jiathis_button_qzone">QQ空间</a>
+  <a class="jiathis_button_douban">豆瓣</a>
+  <a class="jiathis_button_pocket">Pocket</a>
+  <a href="http://www.jiathis.com/share?uid=901656" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=901656" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+          <div class="clearfix"></div>
+          <nav id="pagination">
+  
+    <a href="/2016/06/07/how-to-install-nginx-php7-mysql-on-ubuntu16-04/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
+  
+  
+    <a href="/2015/08/14/personal-archivals/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+  
+  <div class="clearfix"></div>
+</nav>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+
+
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div>
+  
+  &copy; 2015 - 2017 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  
+</div>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Host on <a href="http://pages.github.com/" title="GitHub Pages" target="_blank" rel="external">GitHub Pages</a>. CDN supported by <a href="https://www.cloudflare.com/" title="Cloudflare" target="_blank" rel="external">Cloudflare</a>.
+
+<div class="clearfix"></div>
+</footer>
+  
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'jerryshao';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+    <script type="text/javascript">
+        (function(){
+
+            $(window).scroll(function(){
+
+                var scrollTop = $(window).scrollTop();
+                if ( scrollTop >200 ){
+                    $("#main-nav").removeClass('normal_mode').addClass('top_mode');
+                } else{
+                    $("#main-nav").removeClass('top_mode').addClass('normal_mode');
+                }
+
+            });
+
+        })();
+    </script>
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox({
+      'titlePosition': 'inside'
+    });
+  })(jQuery);
+  </script>
+
+
+
+
+<script type="text/javascript">
+  
+  $(function(){
+
+    $('.title').hover(
+      function() {      
+        $(this).stop().animate(
+          {'marginLeft': '10px'}, 200
+        );   
+      }, 
+      function() {       
+        $(this).stop().animate({'marginLeft': '0px'}, 200);      
+      
+    });   
+
+  });
+
+</script>
+
+
+</body>
+</html>

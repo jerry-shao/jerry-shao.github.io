@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Git同时推送到多个远程库 | 小耗子杰瑞 | JERRY SHAO</title>
+  <meta name="author" content="JERRY SHAO">
+  
+  <meta name="description" content="在有些情况下，我们希望将项目同时关联到多个远程库，并一次性推送到多个远程库。这里我们以同时推送到Github和Gitcafe为例，操作系统为OS X。
+1. 创建本地git仓库
+创建项目文件夹，并将其初始化为git仓库。
+123mkdir ~/github/testGitcd ~/github/testGitgit init">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Git同时推送到多个远程库"/>
+  <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="小耗子杰瑞 | JERRY SHAO" type="application/atom+xml">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-89591790-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+  <header id="header" class='normal_mode'>
+    <nav id="main-nav">
+  <ul class='container'>
+    
+      <li><a href="/">Jerry Shao</a></li>
+    
+      <li><a href="/notes">Notes</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+  </header>
+  <div id="content" class="container">
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2015-08-09T14:16:30.000Z"><a href="/2015/08/09/push-to-two-repos/">Sun, Aug 9 2015, 3:16:30 pm</a></time>
+
+  
+    <h1 class="title">Git同时推送到多个远程库</h1>
+  
+
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/Git/">Git</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <p>在有些情况下，我们希望将项目同时关联到多个远程库，并一次性推送到多个远程库。这里我们以同时推送到Github和Gitcafe为例，操作系统为OS X。<br><br></p>
+<h3 id="1-创建本地git仓库"><a href="#1-创建本地git仓库" class="headerlink" title="1. 创建本地git仓库"></a>1. 创建本地git仓库</h3><hr>
+<p>创建项目文件夹，并将其初始化为git仓库。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir ~/github/<span class="built_in">test</span>Git</div><div class="line"><span class="built_in">cd</span> ~/github/<span class="built_in">test</span>Git</div><div class="line">git init</div></pre></td></tr></table></figure>
+<a id="more"></a><br><br>### 2. 创建远程仓库<br><br>——<br><br><em>  在Github创建远程仓库。<br><br>    <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-1%402x.png" alt="">
+
+
+</em>  在GitCafe创建远程仓库。<br><br>     <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-2%402x.png" alt=""><br><br><br><br>### 3. 将本地仓库关联至远程仓库<br><br>——<br>-  关联至Github<br><br>   <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-4%402x.png" alt=""><br><br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add github <span class="string">'git@github.com:jerry-shao/testGit.git'</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>关联至GitCafe</p>
+<p><img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-3%402x.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add gitcafe <span class="string">'git@gitcafe.com:jerryshao/testGit.git'</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>配置仓库关联属性</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/github/<span class="built_in">test</span>Git/.git</div><div class="line">vi config</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>   打开config文件后，我们可以看到下图中含有我们之前操作的两条remote记录。</p>
+<p>   <img src="http://sinacloud.net/jerryshao/QQ20150812-5%402x.png" alt=""></p>
+<ul>
+<li><p>将两条remote记录合并</p>
+<p> <img src="http://sinacloud.net/jerryshao/QQ20150812-6%402x.png" alt=""></p>
+</li>
+<li><p>保存并退出，可连续输入两个大写Z。即shift+zz。<br><br></p>
+</li>
+</ul>
+<h3 id="4-推送至两个远程库"><a href="#4-推送至两个远程库" class="headerlink" title="4. 推送至两个远程库"></a>4. 推送至两个远程库</h3><hr>
+<ul>
+<li><p>新建一个README.MD文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim README.MD</div></pre></td></tr></table></figure>
+<p>输入<em>#testGit</em>， 保存并退出。</p>
+</li>
+<li><p>commit并push到远程库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m <span class="string">"readme"</span></div><div class="line">git push tworepo master</div></pre></td></tr></table></figure>
+<p><img src="http://sinacloud.net/jerryshao/QQ20150812-7%402x.png" alt=""></p>
+<p>两个远程仓库均推送成功。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+          
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <span class="jiathis_txt">分享到：</span>
+  <a class="jiathis_button_weixin">微信</a>
+  <a class="jiathis_button_tsina">新浪微博</a>
+  <a class="jiathis_button_renren">人人网</a>
+  <a class="jiathis_button_qzone">QQ空间</a>
+  <a class="jiathis_button_douban">豆瓣</a>
+  <a class="jiathis_button_pocket">Pocket</a>
+  <a href="http://www.jiathis.com/share?uid=901656" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=901656" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+          <div class="clearfix"></div>
+          <nav id="pagination">
+  
+    <a href="/2015/08/14/personal-archivals/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
+  
+  
+    <a href="/2015/07/29/transfer-to-hexo/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+  
+  <div class="clearfix"></div>
+</nav>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+
+
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div>
+  
+  &copy; 2015 - 2017 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  
+</div>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Host on <a href="http://pages.github.com/" title="GitHub Pages" target="_blank" rel="external">GitHub Pages</a>. CDN supported by <a href="https://www.cloudflare.com/" title="Cloudflare" target="_blank" rel="external">Cloudflare</a>.
+
+<div class="clearfix"></div>
+</footer>
+  
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'jerryshao';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+    <script type="text/javascript">
+        (function(){
+
+            $(window).scroll(function(){
+
+                var scrollTop = $(window).scrollTop();
+                if ( scrollTop >200 ){
+                    $("#main-nav").removeClass('normal_mode').addClass('top_mode');
+                } else{
+                    $("#main-nav").removeClass('top_mode').addClass('normal_mode');
+                }
+
+            });
+
+        })();
+    </script>
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox({
+      'titlePosition': 'inside'
+    });
+  })(jQuery);
+  </script>
+
+
+
+
+<script type="text/javascript">
+  
+  $(function(){
+
+    $('.title').hover(
+      function() {      
+        $(this).stop().animate(
+          {'marginLeft': '10px'}, 200
+        );   
+      }, 
+      function() {       
+        $(this).stop().animate({'marginLeft': '0px'}, 200);      
+      
+    });   
+
+  });
+
+</script>
+
+
+</body>
+</html>

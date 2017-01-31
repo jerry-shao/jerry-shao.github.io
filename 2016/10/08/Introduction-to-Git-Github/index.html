@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Introduction to Git &amp; Github | 小耗子杰瑞 | JERRY SHAO</title>
+  <meta name="author" content="JERRY SHAO">
+  
+  <meta name="description" content="What’s git
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+What’s github
+
+GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Introduction to Git &amp; Github"/>
+  <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="小耗子杰瑞 | JERRY SHAO" type="application/atom+xml">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-89591790-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+  <header id="header" class='normal_mode'>
+    <nav id="main-nav">
+  <ul class='container'>
+    
+      <li><a href="/">Jerry Shao</a></li>
+    
+      <li><a href="/notes">Notes</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+  </header>
+  <div id="content" class="container">
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2016-10-08T22:55:22.000Z"><a href="/2016/10/08/Introduction-to-Git-Github/">Sat, Oct 8 2016, 11:55:22 pm</a></time>
+
+  
+    <h1 class="title">Introduction to Git &amp; Github</h1>
+  
+
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/git-github/">git, github</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h3 id="What’s-git"><a href="#What’s-git" class="headerlink" title="What’s git"></a>What’s git</h3><hr>
+<blockquote>
+<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+</blockquote>
+<h3 id="What’s-github"><a href="#What’s-github" class="headerlink" title="What’s github"></a>What’s github</h3><hr>
+<blockquote>
+<p>GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.<br><a id="more"></a></p>
+</blockquote>
+<h3 id="How-to-set-up-your-git-environment"><a href="#How-to-set-up-your-git-environment" class="headerlink" title="How to set up your git environment"></a>How to set up your git environment</h3><hr>
+<h4 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h4><p>Open Terminal, and follow the steps below skip step 1~2.</p>
+<h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><ol>
+<li>Download <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop for Windows</a></li>
+<li>Open <strong>Github Shell</strong></li>
+<li><p>Config global setting</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name <span class="string">"Jerry Shao"</span></div><div class="line">git config --global user.email <span class="string">"jerryshao@example.com"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Generate your ssh key</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Copy your ssh key</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/.ssh</div><div class="line">cat id_rsa.pub</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><br></p>
+<h3 id="How-to-set-up-your-github-account"><a href="#How-to-set-up-your-github-account" class="headerlink" title="How to set up your github account"></a>How to set up your github account</h3><hr>
+<p>Once your github account has been created, go to <strong>Settings - SSH&amp;GPG Keys</strong> page, paste your ssh key as a new record.<br><img src="https://i.imgur.com/nBpsLZD.png" alt=""></p>
+<p><br></p>
+<h3 id="Create-your-first-open-source-project"><a href="#Create-your-first-open-source-project" class="headerlink" title="Create your first open-source project"></a>Create your first open-source project</h3><hr>
+<h4 id="Create-amp-initialize-your-git-project"><a href="#Create-amp-initialize-your-git-project" class="headerlink" title="Create &amp; initialize your git project"></a>Create &amp; initialize your git project</h4><ol>
+<li><p>Create a new repository on github.<br><img src="https://i.imgur.com/HWx44F0.png" alt=""></p>
+</li>
+<li><p>Create your project folder</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir ~/Test</div></pre></td></tr></table></figure>
+</li>
+<li><p>Initialize as a git project</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/Test</div><div class="line">git init</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><br></p>
+<h4 id="Remote-with-github-project"><a href="#Remote-with-github-project" class="headerlink" title="Remote with github project"></a>Remote with github project</h4><p>Copy your github repository address<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/Test</div><div class="line">git remote add origin <span class="string">"your github repo address"</span></div></pre></td></tr></table></figure></p>
+<p><br></p>
+<h4 id="Add-amp-commit-your-project-code"><a href="#Add-amp-commit-your-project-code" class="headerlink" title="Add &amp; commit your project code"></a>Add &amp; commit your project code</h4><ol>
+<li><p>Create a new file</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"This is my first git project"</span> &gt;&gt; READEME.MD</div></pre></td></tr></table></figure>
+</li>
+<li><p>Add this file into your project temp storage</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+</li>
+<li><p>Commit this file</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"This is my first commit"</span></div></pre></td></tr></table></figure>
+<p>-m: message for this commit.</p>
+</li>
+</ol>
+<p><br></p>
+<h4 id="Push-to-github"><a href="#Push-to-github" class="headerlink" title="Push to github"></a>Push to github</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<hr>
+<p>Once you finish these steps, your first git project is ready to view on github.<br><img src="https://i.imgur.com/8YMkKBr.png" alt=""></p>
+<p><img src="https://i.imgur.com/NmTLoRa.png" alt=""></p>
+
+      
+    </div>
+    <footer>
+      
+          
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <span class="jiathis_txt">分享到：</span>
+  <a class="jiathis_button_weixin">微信</a>
+  <a class="jiathis_button_tsina">新浪微博</a>
+  <a class="jiathis_button_renren">人人网</a>
+  <a class="jiathis_button_qzone">QQ空间</a>
+  <a class="jiathis_button_douban">豆瓣</a>
+  <a class="jiathis_button_pocket">Pocket</a>
+  <a href="http://www.jiathis.com/share?uid=901656" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=901656" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+          <div class="clearfix"></div>
+          <nav id="pagination">
+  
+    <a href="/2016/11/25/install-latest-mysql-connector-on-windows/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
+  
+  
+    <a href="/2016/07/08/how-to-get-full-driving-license-in-ireland/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+  
+  <div class="clearfix"></div>
+</nav>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+
+
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div>
+  
+  &copy; 2015 - 2017 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  
+</div>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Host on <a href="http://pages.github.com/" title="GitHub Pages" target="_blank" rel="external">GitHub Pages</a>. CDN supported by <a href="https://www.cloudflare.com/" title="Cloudflare" target="_blank" rel="external">Cloudflare</a>.
+
+<div class="clearfix"></div>
+</footer>
+  
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'jerryshao';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+    <script type="text/javascript">
+        (function(){
+
+            $(window).scroll(function(){
+
+                var scrollTop = $(window).scrollTop();
+                if ( scrollTop >200 ){
+                    $("#main-nav").removeClass('normal_mode').addClass('top_mode');
+                } else{
+                    $("#main-nav").removeClass('top_mode').addClass('normal_mode');
+                }
+
+            });
+
+        })();
+    </script>
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox({
+      'titlePosition': 'inside'
+    });
+  })(jQuery);
+  </script>
+
+
+
+
+<script type="text/javascript">
+  
+  $(function(){
+
+    $('.title').hover(
+      function() {      
+        $(this).stop().animate(
+          {'marginLeft': '10px'}, 200
+        );   
+      }, 
+      function() {       
+        $(this).stop().animate({'marginLeft': '0px'}, 200);      
+      
+    });   
+
+  });
+
+</script>
+
+
+</body>
+</html>

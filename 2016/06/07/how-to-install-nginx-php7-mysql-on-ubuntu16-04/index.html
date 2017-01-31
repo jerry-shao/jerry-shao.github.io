@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何在Ubuntu Server16.04上安装Nginx1.10.0 PHP7 MySQL5.7 | 小耗子杰瑞 | JERRY SHAO</title>
+  <meta name="author" content="JERRY SHAO">
+  
+  <meta name="description" content="本教程以运行在vagrant上的ubuntu-16.04-server为例
+
+安装PHP71sudo apt-get install php-fpm
+[Option]通过php -v命令确认安装版本为PHP7[Test]在/var/www/html目录下新建index.php文件1sudo vi /var/www/html/index.php
+按i进入编辑模式，左下角出现insert。使用phpinfo()输出php环境信息。123&amp;lt;?php    phpinfo();?&amp;gt;
+按ESC键退出编辑模式，左下角insert消失。输入:wq命令保存并退出，或连续按两次Z使用快捷键保存并退出。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="如何在Ubuntu Server16.04上安装Nginx1.10.0 PHP7 MySQL5.7"/>
+  <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="小耗子杰瑞 | JERRY SHAO" type="application/atom+xml">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-89591790-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+  <header id="header" class='normal_mode'>
+    <nav id="main-nav">
+  <ul class='container'>
+    
+      <li><a href="/">Jerry Shao</a></li>
+    
+      <li><a href="/notes">Notes</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+  </header>
+  <div id="content" class="container">
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+      <time datetime="2016-06-07T11:05:19.000Z"><a href="/2016/06/07/how-to-install-nginx-php7-mysql-on-ubuntu16-04/">Tue, Jun 7 2016, 12:05:19 pm</a></time>
+
+  
+    <h1 class="title">如何在Ubuntu Server16.04上安装Nginx1.10.0 PHP7 MySQL5.7</h1>
+  
+
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/Ubuntu/">Ubuntu</a>
+  </div>
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <p><strong>本教程以运行在vagrant上的ubuntu-16.04-server为例</strong></p>
+<hr>
+<h3 id="安装PHP7"><a href="#安装PHP7" class="headerlink" title="安装PHP7"></a>安装PHP7</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install php-fpm</div></pre></td></tr></table></figure>
+<p>[Option]通过<strong>php -v</strong>命令确认安装版本为PHP7<br><img src="https://i.imgur.com/4eUWKKc.jpg" alt="Imgur"><br>[Test]在/var/www/html目录下新建index.php文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vi /var/www/html/index.php</div></pre></td></tr></table></figure></p>
+<p>按i进入编辑模式，左下角出现insert。使用phpinfo()输出php环境信息。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">    phpinfo();</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
+<p>按ESC键退出编辑模式，左下角insert消失。输入:wq命令保存并退出，或连续按两次Z使用快捷键保存并退出。<br><a id="more"></a></p>
+<hr>
+<h3 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nginx</div></pre></td></tr></table></figure>
+<p>安装完成后，Nginx默认直接启动。通过命令<strong>curl localhost</strong>查看localhost/index.nginx-debian.html页面源代码，可以确认Nginx运行正常。<br><img src="https://i.imgur.com/N3y7uuR.jpg" alt="Imgur"><br>或通过浏览器访问<a href="https://localhost:8080/index.nginx-debian.html" target="_blank" rel="external">https://localhost:8080/index.nginx-debian.html</a><br><img src="https://i.imgur.com/X8Hgkmt.jpg" alt="Imgur"><br>修改Nginx配置文件(/etc/nginx/sites-available/default)，使其解析PHP文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vi /etc/nginx/sites-available/default</div></pre></td></tr></table></figure></p>
+<p>按i进入编辑模式，左下角出现insert。<br>将Default server configuration下面的默认server配置替换为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen 80 default_server;</div><div class="line">    listen [::]:80 default_server;</div><div class="line"></div><div class="line">    root /var/www/html;</div><div class="line">    index index.php index.html index.htm index.nginx-debian.html;</div><div class="line"></div><div class="line">    server_name localhost;</div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">        try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    location ~ \.php$ &#123;</div><div class="line">        include snippets/fastcgi-php.conf;</div><div class="line">        fastcgi_pass unix:/run/php/php7.0-fpm.sock;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    location ~ /\.ht &#123;</div><div class="line">        deny all;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>(即：在index添加index.php默认解析主页，取消.php的location注释)<br>按ESC键退出编辑模式，左下角insert消失。输入:wq命令保存并退出，或连续按两次Z使用快捷键保存并退出。<br>[Test] 如有其它配置修改，可使用<strong>sudo nginx -t</strong>检测配置文件是否有语法错误<br>重新启动Nginx服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service nginx restart</div></pre></td></tr></table></figure></p>
+<p>[Test]使用curl localhost 即可看到phpinfo()输出PHP7运行环境的HTML源代码，或通过浏览器访问localhost<br><img src="https://i.imgur.com/64EsK3Z.jpg" alt="Imgur"></p>
+<hr>
+<h3 id="安装MySQL5-7"><a href="#安装MySQL5-7" class="headerlink" title="安装MySQL5.7"></a>安装MySQL5.7</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install mysql-server</div></pre></td></tr></table></figure>
+<p>设置MySQL root用户的密码<br><img src="https://i.imgur.com/tBQuak7.jpg" alt="Imgur"><br>再次输入密码进行确认<br><img src="https://i.imgur.com/brlRuKU.jpg" alt="Imgur"><br>登录MySQL<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql -uroot -p</div></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/7hnmSuH.jpg" alt="Imgur"></p>
+<hr>
+<p>至此，Nginx1.10.0+PHP7+MySQL5.7全部安装完毕。</p>
+
+      
+    </div>
+    <footer>
+      
+          
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <span class="jiathis_txt">分享到：</span>
+  <a class="jiathis_button_weixin">微信</a>
+  <a class="jiathis_button_tsina">新浪微博</a>
+  <a class="jiathis_button_renren">人人网</a>
+  <a class="jiathis_button_qzone">QQ空间</a>
+  <a class="jiathis_button_douban">豆瓣</a>
+  <a class="jiathis_button_pocket">Pocket</a>
+  <a href="http://www.jiathis.com/share?uid=901656" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=901656" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+          <div class="clearfix"></div>
+          <nav id="pagination">
+  
+    <a href="/2016/06/19/Alternative-syntax-in-PHP/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
+  
+  
+    <a href="/2016/03/21/Hexo3同时发布到多个仓库/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+  
+  <div class="clearfix"></div>
+</nav>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+
+
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div>
+  
+  &copy; 2015 - 2017 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  
+</div>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Host on <a href="http://pages.github.com/" title="GitHub Pages" target="_blank" rel="external">GitHub Pages</a>. CDN supported by <a href="https://www.cloudflare.com/" title="Cloudflare" target="_blank" rel="external">Cloudflare</a>.
+
+<div class="clearfix"></div>
+</footer>
+  
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'jerryshao';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+    <script type="text/javascript">
+        (function(){
+
+            $(window).scroll(function(){
+
+                var scrollTop = $(window).scrollTop();
+                if ( scrollTop >200 ){
+                    $("#main-nav").removeClass('normal_mode').addClass('top_mode');
+                } else{
+                    $("#main-nav").removeClass('top_mode').addClass('normal_mode');
+                }
+
+            });
+
+        })();
+    </script>
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox({
+      'titlePosition': 'inside'
+    });
+  })(jQuery);
+  </script>
+
+
+
+
+<script type="text/javascript">
+  
+  $(function(){
+
+    $('.title').hover(
+      function() {      
+        $(this).stop().animate(
+          {'marginLeft': '10px'}, 200
+        );   
+      }, 
+      function() {       
+        $(this).stop().animate({'marginLeft': '0px'}, 200);      
+      
+    });   
+
+  });
+
+</script>
+
+
+</body>
+</html>
