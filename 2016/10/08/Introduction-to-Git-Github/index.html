@@ -26,6 +26,8 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
 
   <link href="/favicon.ico" rel="icon">
   <link rel="alternate" href="/atom.xml" title="小耗子杰瑞 | JERRY SHAO" type="application/atom+xml">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/style.css">
@@ -187,7 +189,21 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
     </footer>
   </div>
 </article>
+<div id="gitment"></div>
+<!-- 主页不要加载gitment -->
 
+<script>
+var gitment = new Gitment({
+  owner: 'jerry-shao',
+  repo: 'jerry-shao.github.io',
+  oauth: {
+    client_id: '99cea3b02918f431ef43',
+    client_secret: '501ae6a200995c0b0e9547e13861ffabaaca225f',
+  },
+})
+gitment.render('gitment')
+</script>
+ 
 
 
 
