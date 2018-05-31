@@ -20,7 +20,7 @@ Solution:1npm install hexo-deployer-git --save
   <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
 
   
-    <meta property="og:image" content="undefined"/>
+    <meta property="og:image" content=""/>
   
 
   <link href="https://jerryshao.com/favicon.ico" rel="icon">
@@ -109,16 +109,16 @@ Solution:1npm install hexo-deployer-git --save
       
         <p>博客很久没有更新，最近看到Hexo的最新版本已经是3打头了，决定升级继续写博客。然而升级的过程像大部分新产品一样，新特性往往用不到，真正用到的坑又多了一些。折腾了近一周，终于又可以像往常一样使用 <strong>Hexo g -d</strong> 同时发布到两个git平台。下面记录一下遇到的坑和solution。</p>
 <h4 id="Problem-1-Hexo-deployer报错"><a href="#Problem-1-Hexo-deployer报错" class="headerlink" title="Problem 1. Hexo deployer报错"></a>Problem 1. Hexo deployer报错</h4><hr>
-<p>文章Generate正常，进行Deploy时报错。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found: git</div></pre></td></tr></table></figure></p>
-<p><strong>Solution:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
-<p>具体可以查看<a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0" target="_blank" rel="external">Hexo3 Wiki</a>和<a href="https://github.com/hexojs/hexo/issues/1013" target="_blank" rel="external">Issue#1013</a>。<br><a id="more"></a></p>
+<p>文章Generate正常，进行Deploy时报错。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure></p>
+<p><strong>Solution:</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>具体可以查看<a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0" target="_blank" rel="noopener">Hexo3 Wiki</a>和<a href="https://github.com/hexojs/hexo/issues/1013" target="_blank" rel="noopener">Issue#1013</a>。<br><a id="more"></a></p>
 <h4 id="Problem-2-无法同时发布到多个git平台"><a href="#Problem-2-无法同时发布到多个git平台" class="headerlink" title="Problem 2. 无法同时发布到多个git平台"></a>Problem 2. 无法同时发布到多个git平台</h4><hr>
-<p>包括我在内的一部分人在使用Hexo时，是同时把文章发布到多个git平台的，即使用多个git pages服务。如：github pages和coding pages(原gitcafe pages服务)。然后将国内线路解析到coding pages上，将国外线路解析到github pages上，以保证访问速度和体验。<br>在升级Hexo3之后，同样遇到了文章Generate正常，进行Deploy时报错。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">FATAL fatal: remote part of refspec is not a valid name in HEAD: master</div></pre></td></tr></table></figure></p>
-<p>在使用Hexo2时，同时发布到多个git平台一般会使用下面的_config.yml配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">    github: git@github.com:jerry-shao/jerry-shao.github.io.git, master</div><div class="line">    gitcafe: git@gitcafe.com:jerryshao/jerryshao.git, gitcafe-pages</div></pre></td></tr></table></figure></p>
+<p>包括我在内的一部分人在使用Hexo时，是同时把文章发布到多个git平台的，即使用多个git pages服务。如：github pages和coding pages(原gitcafe pages服务)。然后将国内线路解析到coding pages上，将国外线路解析到github pages上，以保证访问速度和体验。<br>在升级Hexo3之后，同样遇到了文章Generate正常，进行Deploy时报错。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FATAL fatal: remote part of refspec is not a valid name in HEAD: master</span><br></pre></td></tr></table></figure></p>
+<p>在使用Hexo2时，同时发布到多个git平台一般会使用下面的_config.yml配置：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: git@github.com:jerry-shao/jerry-shao.github.io.git, master</span><br><span class="line">    gitcafe: git@gitcafe.com:jerryshao/jerryshao.git, gitcafe-pages</span><br></pre></td></tr></table></figure></p>
 <p><strong>Solution</strong></p>
 <ol>
 <li>在迁移至coding pages服务后，需要在coding的项目页面手动开启pages服务。这里有一点改进就是coding的pages服务不限定branch的名称，可以自定义pages服务映射的branch。这里我们为了方便，将coding pages这边的branch也改成master。</li>
-<li>_config.yml中的deploy也与之前的写法不同，经过多次尝试，以下配置可以同时发布文章到多个平台。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">    github: git@github.com:jerry-shao/jerry-shao.github.io.git</div><div class="line">    coding: git@git.coding.net:jerry_shao/jerryshao.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<li>_config.yml中的deploy也与之前的写法不同，经过多次尝试，以下配置可以同时发布文章到多个平台。<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: git@github.com:jerry-shao/jerry-shao.github.io.git</span><br><span class="line">    coding: git@git.coding.net:jerry_shao/jerryshao.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>经过修改后使用 <strong>Hexo g -d</strong> 就可以同时发布到github和coding了。</p>
@@ -175,10 +175,10 @@ gitment.render('gitment')
   </div>
   <footer id="footer" class="inner"><div>
   
-  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="noopener">鲁ICP备15006756号-1</a>
   
 </div>
-Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="external">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="external">Status</a>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="noopener">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="noopener">Status</a>
  <div class="clearfix"></div>
  <script src="//rum-static.pingdom.net/pa-5ae8925e29ccc5000600007d.js" async></script>
 </footer>

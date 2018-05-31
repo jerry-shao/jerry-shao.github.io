@@ -19,7 +19,7 @@
   <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
 
   
-    <meta property="og:image" content="undefined"/>
+    <meta property="og:image" content=""/>
   
 
   <link href="https://jerryshao.com/favicon.ico" rel="icon">
@@ -103,20 +103,20 @@
         <p>在有些情况下，我们希望将项目同时关联到多个远程库，并一次性推送到多个远程库。这里我们以同时推送到Github和Gitcafe为例，操作系统为OS X。<br><br></p>
 <h3 id="1-创建本地git仓库"><a href="#1-创建本地git仓库" class="headerlink" title="1. 创建本地git仓库"></a>1. 创建本地git仓库</h3><hr>
 <p>创建项目文件夹，并将其初始化为git仓库。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir ~/github/<span class="built_in">test</span>Git</div><div class="line"><span class="built_in">cd</span> ~/github/<span class="built_in">test</span>Git</div><div class="line">git init</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/github/testGit</span><br><span class="line"><span class="built_in">cd</span> ~/github/testGit</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
 <a id="more"></a><br><br>### 2. 创建远程仓库<br><br>——<br><br><em>  在Github创建远程仓库。<br><br>    <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-1%402x.png" alt="">
 
 
-</em>  在GitCafe创建远程仓库。<br><br>     <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-2%402x.png" alt=""><br><br><br><br>### 3. 将本地仓库关联至远程仓库<br><br>——<br>-  关联至Github<br><br>   <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-4%402x.png" alt=""><br><br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add github <span class="string">'git@github.com:jerry-shao/testGit.git'</span></div></pre></td></tr></table></figure>
+</em>  在GitCafe创建远程仓库。<br><br>     <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-2%402x.png" alt=""><br><br><br><br>### 3. 将本地仓库关联至远程仓库<br><br>——<br>-  关联至Github<br><br>   <img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-4%402x.png" alt=""><br><br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add github <span class="string">'git@github.com:jerry-shao/testGit.git'</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>关联至GitCafe</p>
 <p><img src="http://imgx.sinacloud.net/jerryshao/w_500,h_333/QQ20150812-3%402x.png" alt=""></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add gitcafe <span class="string">'git@gitcafe.com:jerryshao/testGit.git'</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add gitcafe <span class="string">'git@gitcafe.com:jerryshao/testGit.git'</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <ul>
 <li><p>配置仓库关联属性</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/github/<span class="built_in">test</span>Git/.git</div><div class="line">vi config</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/github/testGit/.git</span><br><span class="line">vi config</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>   打开config文件后，我们可以看到下图中含有我们之前操作的两条remote记录。</p>
@@ -131,11 +131,11 @@
 <h3 id="4-推送至两个远程库"><a href="#4-推送至两个远程库" class="headerlink" title="4. 推送至两个远程库"></a>4. 推送至两个远程库</h3><hr>
 <ul>
 <li><p>新建一个README.MD文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim README.MD</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim README.MD</span><br></pre></td></tr></table></figure>
 <p>输入<em>#testGit</em>， 保存并退出。</p>
 </li>
 <li><p>commit并push到远程库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m <span class="string">"readme"</span></div><div class="line">git push tworepo master</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"readme"</span></span><br><span class="line">git push tworepo master</span><br></pre></td></tr></table></figure>
 <p><img src="http://sinacloud.net/jerryshao/QQ20150812-7%402x.png" alt=""></p>
 <p>两个远程仓库均推送成功。</p>
 </li>
@@ -193,10 +193,10 @@ gitment.render('gitment')
   </div>
   <footer id="footer" class="inner"><div>
   
-  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="noopener">鲁ICP备15006756号-1</a>
   
 </div>
-Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="external">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="external">Status</a>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="noopener">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="noopener">Status</a>
  <div class="clearfix"></div>
  <script src="//rum-static.pingdom.net/pa-5ae8925e29ccc5000600007d.js" async></script>
 </footer>

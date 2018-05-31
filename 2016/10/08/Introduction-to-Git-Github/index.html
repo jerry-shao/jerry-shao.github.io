@@ -22,7 +22,7 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
   <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
 
   
-    <meta property="og:image" content="undefined"/>
+    <meta property="og:image" content=""/>
   
 
   <link href="https://jerryshao.com/favicon.ico" rel="icon">
@@ -114,16 +114,16 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
 <h3 id="How-to-set-up-your-git-environment"><a href="#How-to-set-up-your-git-environment" class="headerlink" title="How to set up your git environment"></a>How to set up your git environment</h3><hr>
 <h4 id="Mac-OS"><a href="#Mac-OS" class="headerlink" title="Mac OS"></a>Mac OS</h4><p>Open Terminal, and follow the steps below skip step 1~2.</p>
 <h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><ol>
-<li>Download <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop for Windows</a></li>
+<li>Download <a href="https://desktop.github.com/" target="_blank" rel="noopener">Github Desktop for Windows</a></li>
 <li>Open <strong>Github Shell</strong></li>
 <li><p>Config global setting</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name <span class="string">"Jerry Shao"</span></div><div class="line">git config --global user.email <span class="string">"jerryshao@example.com"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"Jerry Shao"</span></span><br><span class="line">git config --global user.email <span class="string">"jerryshao@example.com"</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Generate your ssh key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Copy your ssh key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/.ssh</div><div class="line">cat id_rsa.pub</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><br></p>
@@ -135,29 +135,29 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
 <li><p>Create a new repository on github.<br><img src="https://i.imgur.com/HWx44F0.png" alt=""></p>
 </li>
 <li><p>Create your project folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir ~/Test</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/Test</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Initialize as a git project</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/Test</div><div class="line">git init</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Test</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><br></p>
-<h4 id="Remote-with-github-project"><a href="#Remote-with-github-project" class="headerlink" title="Remote with github project"></a>Remote with github project</h4><p>Copy your github repository address<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/Test</div><div class="line">git remote add origin <span class="string">"your github repo address"</span></div></pre></td></tr></table></figure></p>
+<h4 id="Remote-with-github-project"><a href="#Remote-with-github-project" class="headerlink" title="Remote with github project"></a>Remote with github project</h4><p>Copy your github repository address<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Test</span><br><span class="line">git remote add origin <span class="string">"your github repo address"</span></span><br></pre></td></tr></table></figure></p>
 <p><br></p>
 <h4 id="Add-amp-commit-your-project-code"><a href="#Add-amp-commit-your-project-code" class="headerlink" title="Add &amp; commit your project code"></a>Add &amp; commit your project code</h4><ol>
 <li><p>Create a new file</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"This is my first git project"</span> &gt;&gt; READEME.MD</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"This is my first git project"</span> &gt;&gt; READEME.MD</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Add this file into your project temp storage</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Commit this file</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"This is my first commit"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"This is my first commit"</span></span><br></pre></td></tr></table></figure>
 <p>-m: message for this commit.</p>
 </li>
 </ol>
 <p><br></p>
-<h4 id="Push-to-github"><a href="#Push-to-github" class="headerlink" title="Push to github"></a>Push to github</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<h4 id="Push-to-github"><a href="#Push-to-github" class="headerlink" title="Push to github"></a>Push to github</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 <hr>
 <p>Once you finish these steps, your first git project is ready to view on github.<br><img src="https://i.imgur.com/8YMkKBr.png" alt=""></p>
 <p><img src="https://i.imgur.com/NmTLoRa.png" alt=""></p>
@@ -214,10 +214,10 @@ gitment.render('gitment')
   </div>
   <footer id="footer" class="inner"><div>
   
-  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="external">鲁ICP备15006756号-1</a>
+  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="noopener">鲁ICP备15006756号-1</a>
   
 </div>
-Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="external">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="external">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="external">Status</a>
+Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="noopener">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="noopener">Status</a>
  <div class="clearfix"></div>
  <script src="//rum-static.pingdom.net/pa-5ae8925e29ccc5000600007d.js" async></script>
 </footer>

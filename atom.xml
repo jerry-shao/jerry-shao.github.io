@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小耗子杰瑞 | JERRY SHAO</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jerryshao.com/"/>
+  <updated>2017-02-01T17:49:45.000Z</updated>
+  <id>https://jerryshao.com/</id>
+  
+  <author>
+    <name>JERRY SHAO</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017实习生面经</title>
+    <link href="https://jerryshao.com/2017/01/15/Apply-Summer-Internship-2016-2017/"/>
+    <id>https://jerryshao.com/2017/01/15/Apply-Summer-Internship-2016-2017/</id>
+    <published>2017-01-15T23:36:02.000Z</published>
+    <updated>2017-02-01T17:49:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;Keywords：爱尔兰，软件开发，大三，实习&lt;/em&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://i.imgur.com/VRrWzpi.png&quot; alt=&quot;&quot;&gt;&lt;/center&gt;
+
+&lt;p&gt;50多天，15份简历，3次面试机会，一张offer。&lt;br&gt;说实话，这个结果我既满意又不满意(跟没说一样…)。满意的是在投简历之前，我定了几个目标公司，终极目标是Google和Amazon，目标达成。不满意的是，只拿到了一张offer。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的2016</title>
+    <link href="https://jerryshao.com/2016/12/23/My-2016/"/>
+    <id>https://jerryshao.com/2016/12/23/My-2016/</id>
+    <published>2016-12-23T12:09:07.000Z</published>
+    <updated>2016-12-23T18:02:26.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;观影和读书&quot;&gt;&lt;a href=&quot;#观影和读书&quot; class=&quot;headerlink&quot; title=&quot;观影和读书&quot;&gt;&lt;/a&gt;观影和读书&lt;/h3&gt;&lt;p&gt;先说说2015年底定的观影和读书目标。&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://i.imgur.com/tSUOrdH.png&quot; alt=&quot;&quot;&gt;&lt;/center&gt;
+
+&lt;p&gt;计划看120部电影，读20本书；实际看了108部电影，读了10本书。&lt;br&gt;两项都没有完成。观影量已经很接近了，而且这个量也可以接受。而这一年真正从头到尾读完的书不过10本，跟目标差距非常大，当然还有很多技术书籍只是按需读相应的章节，后面我整理一下短评再发书单。这10本里，按阅读方式分，9本在Kindle上读完，1本在车上听完；按时间段分，暑期实习的3个月读了5本，其它时间读了5本。&lt;br&gt;阅读方式上没说的，Kindle是主力。在阅读时间上，实习期间每天上午下午各15分钟的Tea Time是我固定用来喝咖啡读书的；在校期间，基本都是午餐间隔、睡觉前、等人等等这种碎片化时间。&lt;br&gt;这一年也在网上看了一些读书方法的分享，需要做一些改进。一是读书方法上，2017年要读的第一本书就是&lt;a href=&quot;https://book.douban.com/subject/1013208/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to read a book&lt;/a&gt;，并不是每一本书都要从头到尾一字一句的读。二是减少碎片化阅读时间，制定固定的阅读时间。阅读就像看剧一样，是需要前情回顾的，也好比计算机的Context Switching，频繁地在两个上下文环境切换，有效的程序执行时间并不多。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2017计划看90部电影，读24本书。&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Install the latest mysql-connector-python on windows</title>
+    <link href="https://jerryshao.com/2016/11/25/install-latest-mysql-connector-on-windows/"/>
+    <id>https://jerryshao.com/2016/11/25/install-latest-mysql-connector-on-windows/</id>
+    <published>2016-11-25T08:13:06.000Z</published>
+    <updated>2016-12-17T17:06:31.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;Download the latest release from github. &lt;a href=&quot;https://github.com/mysql/mysql-connector-python/archive/master.zip&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Introduction to Git &amp; Github</title>
+    <link href="https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/"/>
+    <id>https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/</id>
+    <published>2016-10-08T22:55:22.000Z</published>
+    <updated>2016-12-17T17:10:15.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;What’s-git&quot;&gt;&lt;a href=&quot;#What’s-git&quot; class=&quot;headerlink&quot; title=&quot;What’s git&quot;&gt;&lt;/a&gt;What’s git&lt;/h3&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;What’s-github&quot;&gt;&lt;a href=&quot;#What’s-github&quot; class=&quot;headerlink&quot; title=&quot;What’s github&quot;&gt;&lt;/a&gt;What’s github&lt;/h3&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="git, github" scheme="https://jerryshao.com/tags/git-github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爱尔兰驾照——路考篇</title>
+    <link href="https://jerryshao.com/2016/07/08/how-to-get-full-driving-license-in-ireland/"/>
+    <id>https://jerryshao.com/2016/07/08/how-to-get-full-driving-license-in-ireland/</id>
+    <published>2016-07-08T22:58:01.000Z</published>
+    <updated>2016-07-17T22:18:12.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;从Learner-Permit到Full-License的基本流程&quot;&gt;&lt;a href=&quot;#从Learner-Permit到Full-License的基本流程&quot; class=&quot;headerlink&quot; title=&quot;从Learner Permit到Full License的基本流程&quot;&gt;&lt;/a&gt;从Learner Permit到Full License的基本流程&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;拿到Learner Permit&lt;/li&gt;
+&lt;li&gt;完成12学时及以上的驾驶课程&lt;/li&gt;
+&lt;li&gt;自Learner Permit签发之日起满6个月后申请路考&lt;/li&gt;
+&lt;li&gt;参加路考&lt;/li&gt;
+&lt;li&gt;申请Full License
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Alternative syntax in PHP</title>
+    <link href="https://jerryshao.com/2016/06/19/Alternative-syntax-in-PHP/"/>
+    <id>https://jerryshao.com/2016/06/19/Alternative-syntax-in-PHP/</id>
+    <published>2016-06-19T10:37:17.000Z</published>
+    <updated>2016-06-19T17:25:02.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In PHP, there are a lot of alternative syntax. It can improve the legbility of your code.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;if-while-for-foreach-switch&quot;&gt;&lt;a href=&quot;#if-while-for-foreach-switch&quot; class=&quot;headerlink&quot; title=&quot;if, while, for, foreach, switch&quot;&gt;&lt;/a&gt;if, while, for, foreach, switch&lt;/h3&gt;&lt;p&gt;The alternatice syntax in control structures is to remove the openning brace instead of a colon and closing with endif, endwhile, endfor, foreach, and endswitch.&lt;/p&gt;
+&lt;h4 id=&quot;if-endif&quot;&gt;&lt;a href=&quot;#if-endif&quot; class=&quot;headerlink&quot; title=&quot;if, endif&quot;&gt;&lt;/a&gt;if, endif&lt;/h4&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ($a == &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;): &lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;A is equal to &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;endif&lt;/span&gt;; &lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;while-endwhile&quot;&gt;&lt;a href=&quot;#while-endwhile&quot; class=&quot;headerlink&quot; title=&quot;while, endwhile&quot;&gt;&lt;/a&gt;while, endwhile&lt;/h4&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; ($a &amp;lt; &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;): &lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; $a++; &lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;endwhile&lt;/span&gt;; &lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Output:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;01234&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Remember, do not use any indent in this case.&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="PHP" scheme="https://jerryshao.com/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在Ubuntu Server16.04上安装Nginx1.10.0 PHP7 MySQL5.7</title>
+    <link href="https://jerryshao.com/2016/06/07/how-to-install-nginx-php7-mysql-on-ubuntu16-04/"/>
+    <id>https://jerryshao.com/2016/06/07/how-to-install-nginx-php7-mysql-on-ubuntu16-04/</id>
+    <published>2016-06-07T11:05:19.000Z</published>
+    <updated>2016-12-23T14:30:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;本教程以运行在vagrant上的ubuntu-16.04-server为例&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;安装PHP7&quot;&gt;&lt;a href=&quot;#安装PHP7&quot; class=&quot;headerlink&quot; title=&quot;安装PHP7&quot;&gt;&lt;/a&gt;安装PHP7&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install php-fpm&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;[Option]通过&lt;strong&gt;php -v&lt;/strong&gt;命令确认安装版本为PHP7&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/4eUWKKc.jpg&quot; alt=&quot;Imgur&quot;&gt;&lt;br&gt;[Test]在/var/www/html目录下新建index.php文件&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi /var/www/html/index.php&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;按i进入编辑模式，左下角出现insert。使用phpinfo()输出php环境信息。&lt;br&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    phpinfo();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;按ESC键退出编辑模式，左下角insert消失。输入:wq命令保存并退出，或连续按两次Z使用快捷键保存并退出。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Ubuntu" scheme="https://jerryshao.com/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo3同时发布到多个仓库</title>
+    <link href="https://jerryshao.com/2016/03/21/Hexo3%E5%90%8C%E6%97%B6%E5%8F%91%E5%B8%83%E5%88%B0%E5%A4%9A%E4%B8%AA%E4%BB%93%E5%BA%93/"/>
+    <id>https://jerryshao.com/2016/03/21/Hexo3同时发布到多个仓库/</id>
+    <published>2016-03-21T18:03:28.000Z</published>
+    <updated>2016-03-21T20:20:16.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博客很久没有更新，最近看到Hexo的最新版本已经是3打头了，决定升级继续写博客。然而升级的过程像大部分新产品一样，新特性往往用不到，真正用到的坑又多了一些。折腾了近一周，终于又可以像往常一样使用 &lt;strong&gt;Hexo g -d&lt;/strong&gt; 同时发布到两个git平台。下面记录一下遇到的坑和solution。&lt;/p&gt;
+&lt;h4 id=&quot;Problem-1-Hexo-deployer报错&quot;&gt;&lt;a href=&quot;#Problem-1-Hexo-deployer报错&quot; class=&quot;headerlink&quot; title=&quot;Problem 1. Hexo deployer报错&quot;&gt;&lt;/a&gt;Problem 1. Hexo deployer报错&lt;/h4&gt;&lt;hr&gt;
+&lt;p&gt;文章Generate正常，进行Deploy时报错。&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ERROR Deployer not found: git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;具体可以查看&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo3 Wiki&lt;/a&gt;和&lt;a href=&quot;https://github.com/hexojs/hexo/issues/1013&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Issue#1013&lt;/a&gt;。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Web" scheme="https://jerryshao.com/categories/Web/"/>
+    
+    
+      <category term="hexo" scheme="https://jerryshao.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教育部留学服务中心存档攻略</title>
+    <link href="https://jerryshao.com/2015/08/14/personal-archivals/"/>
+    <id>https://jerryshao.com/2015/08/14/personal-archivals/</id>
+    <published>2015-08-14T08:31:49.000Z</published>
+    <updated>2016-03-21T20:21:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;教育部留学服务中心于1997年成立”留学人员档案室”，专门从事出国留学人员人事档案的管理工作，集中统一，归口管理，解决了留学人员的后顾之忧。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-存放在留学服务中心的好处&quot;&gt;&lt;a href=&quot;#1-存放在留学服务中心的好处&quot; class=&quot;headerlink&quot; title=&quot;1. 存放在留学服务中心的好处&quot;&gt;&lt;/a&gt;1. 存放在留学服务中心的好处&lt;/h3&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;丰富个人档案，内含出国留学完整的档案材料。&lt;/li&gt;
+&lt;li&gt;回国学历认证简化手续。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="留学" scheme="https://jerryshao.com/categories/%E7%95%99%E5%AD%A6/"/>
+    
+    
+      <category term="留学生活" scheme="https://jerryshao.com/tags/%E7%95%99%E5%AD%A6%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git同时推送到多个远程库</title>
+    <link href="https://jerryshao.com/2015/08/09/push-to-two-repos/"/>
+    <id>https://jerryshao.com/2015/08/09/push-to-two-repos/</id>
+    <published>2015-08-09T14:16:30.000Z</published>
+    <updated>2016-03-21T20:22:36.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在有些情况下，我们希望将项目同时关联到多个远程库，并一次性推送到多个远程库。这里我们以同时推送到Github和Gitcafe为例，操作系统为OS X。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-创建本地git仓库&quot;&gt;&lt;a href=&quot;#1-创建本地git仓库&quot; class=&quot;headerlink&quot; title=&quot;1. 创建本地git仓库&quot;&gt;&lt;/a&gt;1. 创建本地git仓库&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;创建项目文件夹，并将其初始化为git仓库。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir ~/github/testGit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; ~/github/testGit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://jerryshao.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初次使用Hexo遇到的一些问题</title>
+    <link href="https://jerryshao.com/2015/07/29/transfer-to-hexo/"/>
+    <id>https://jerryshao.com/2015/07/29/transfer-to-hexo/</id>
+    <published>2015-07-29T14:40:46.000Z</published>
+    <updated>2016-03-21T20:20:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 )&lt;/p&gt;
+&lt;h3 id=&quot;安装Hexo报错&quot;&gt;&lt;a href=&quot;#安装Hexo报错&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo报错&quot;&gt;&lt;/a&gt;安装Hexo报错&lt;/h3&gt;&lt;p&gt;安装流程是按照Node.js官方指导，下载安装包一步一步安装，Node.js和npm同时由Node.js提供的包安装。&lt;/p&gt;
+&lt;p&gt;此时执行&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;版本号正常显示&lt;/p&gt;
+&lt;p&gt;问题：安装Hexo，执行以下命令时报错。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Web" scheme="https://jerryshao.com/categories/Web/"/>
+    
+    
+      <category term="hexo" scheme="https://jerryshao.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爱尔兰驾照考试-理论篇</title>
+    <link href="https://jerryshao.com/2015/05/18/%E7%88%B1%E5%B0%94%E5%85%B0%E9%A9%BE%E7%85%A7%E8%80%83%E8%AF%95-%E7%90%86%E8%AE%BA%E7%AF%87/"/>
+    <id>https://jerryshao.com/2015/05/18/爱尔兰驾照考试-理论篇/</id>
+    <published>2015-05-18T10:18:46.000Z</published>
+    <updated>2016-02-28T13:03:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;爱尔兰承认中国驾照吗&quot;&gt;&lt;a href=&quot;#爱尔兰承认中国驾照吗&quot; class=&quot;headerlink&quot; title=&quot;爱尔兰承认中国驾照吗&quot;&gt;&lt;/a&gt;爱尔兰承认中国驾照吗&lt;/h3&gt;&lt;p&gt;不承认。当然很久之前我也从网上看到过一条消息，说中国大陆驾照经过翻译认证可以在爱尔兰驾驶一年，这个没有亲测过，所以不推荐遵循这条消息。官方的解释是需要考取理论驾照、全驾照，不承认中国大陆驾照。如果你有其它国家的驾照，特别是EU国家，就有区别了。班上有个立陶宛的同学，他有立陶宛的正式驾照，只需要参加爱尔兰的驾照理论考试就可以直接换发爱尔兰全驾照（Full licence），具体可以联系爱尔兰交通部门咨询。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="留学生活" scheme="https://jerryshao.com/tags/%E7%95%99%E5%AD%A6%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+</feed>
