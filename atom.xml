@@ -26,7 +26,13 @@
     <summary type="html">
     
       &lt;p&gt;&lt;em&gt;Keywords：爱尔兰，软件开发，大三，实习&lt;/em&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://i.imgur.com/VRrWzpi.png&quot; alt=&quot;&quot;&gt;&lt;/center&gt;
+&lt;center&gt;&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+                    &lt;img src=&quot;https://i.imgur.com/VRrWzpi.png&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;image-caption&quot;&gt;&lt;/div&gt;
+            &lt;/figure&gt;&lt;/center&gt;
 
 &lt;p&gt;50多天，15份简历，3次面试机会，一张offer。&lt;br&gt;说实话，这个结果我既满意又不满意(跟没说一样…)。满意的是在投简历之前，我定了几个目标公司，终极目标是Google和Amazon，目标达成。不满意的是，只拿到了一张offer。&lt;/p&gt;
     
@@ -45,7 +51,13 @@
     <summary type="html">
     
       &lt;h3 id=&quot;观影和读书&quot;&gt;&lt;a href=&quot;#观影和读书&quot; class=&quot;headerlink&quot; title=&quot;观影和读书&quot;&gt;&lt;/a&gt;观影和读书&lt;/h3&gt;&lt;p&gt;先说说2015年底定的观影和读书目标。&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://i.imgur.com/tSUOrdH.png&quot; alt=&quot;&quot;&gt;&lt;/center&gt;
+&lt;center&gt;&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+                    &lt;img src=&quot;https://i.imgur.com/tSUOrdH.png&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;image-caption&quot;&gt;&lt;/div&gt;
+            &lt;/figure&gt;&lt;/center&gt;
 
 &lt;p&gt;计划看120部电影，读20本书；实际看了108部电影，读了10本书。&lt;br&gt;两项都没有完成。观影量已经很接近了，而且这个量也可以接受。而这一年真正从头到尾读完的书不过10本，跟目标差距非常大，当然还有很多技术书籍只是按需读相应的章节，后面我整理一下短评再发书单。这10本里，按阅读方式分，9本在Kindle上读完，1本在车上听完；按时间段分，暑期实习的3个月读了5本，其它时间读了5本。&lt;br&gt;阅读方式上没说的，Kindle是主力。在阅读时间上，实习期间每天上午下午各15分钟的Tea Time是我固定用来喝咖啡读书的；在校期间，基本都是午餐间隔、睡觉前、等人等等这种碎片化时间。&lt;br&gt;这一年也在网上看了一些读书方法的分享，需要做一些改进。一是读书方法上，2017年要读的第一本书就是&lt;a href=&quot;https://book.douban.com/subject/1013208/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to read a book&lt;/a&gt;，并不是每一本书都要从头到尾一字一句的读。二是减少碎片化阅读时间，制定固定的阅读时间。阅读就像看剧一样，是需要前情回顾的，也好比计算机的Context Switching，频繁地在两个上下文环境切换，有效的程序执行时间并不多。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2017计划看90部电影，读24本书。&lt;/strong&gt;&lt;br&gt;
@@ -159,7 +171,13 @@
       &lt;p&gt;&lt;strong&gt;本教程以运行在vagrant上的ubuntu-16.04-server为例&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;安装PHP7&quot;&gt;&lt;a href=&quot;#安装PHP7&quot; class=&quot;headerlink&quot; title=&quot;安装PHP7&quot;&gt;&lt;/a&gt;安装PHP7&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install php-fpm&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;[Option]通过&lt;strong&gt;php -v&lt;/strong&gt;命令确认安装版本为PHP7&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/4eUWKKc.jpg&quot; alt=&quot;Imgur&quot;&gt;&lt;br&gt;[Test]在/var/www/html目录下新建index.php文件&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi /var/www/html/index.php&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;[Option]通过&lt;strong&gt;php -v&lt;/strong&gt;命令确认安装版本为PHP7&lt;br&gt;&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+                    &lt;img src=&quot;https://i.imgur.com/4eUWKKc.jpg&quot; alt=&quot;Imgur&quot; title=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;image-caption&quot;&gt;Imgur&lt;/div&gt;
+            &lt;/figure&gt;&lt;br&gt;[Test]在/var/www/html目录下新建index.php文件&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo vi /var/www/html/index.php&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;按i进入编辑模式，左下角出现insert。使用phpinfo()输出php环境信息。&lt;br&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    phpinfo();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;按ESC键退出编辑模式，左下角insert消失。输入:wq命令保存并退出，或连续按两次Z使用快捷键保存并退出。&lt;br&gt;
     

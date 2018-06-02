@@ -1,109 +1,207 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="//favicon.ico">
-  
-  <title>Introduction to Git &amp; Github | 小耗子杰瑞 | JERRY SHAO</title>
-  <meta name="author" content="JERRY SHAO">
-  
-  <meta name="description" content="What’s git
+    
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+    
 
-What’s github
+    
 
-GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Introduction to Git &amp; Github"/>
-  <meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO"/>
 
-  
-    <meta property="og:image" content=""/>
-  
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Introduction to Git &amp; Github | 小耗子杰瑞 | JERRY SHAO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="git, github">
+    <meta name="description" content="What’s git  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  What’s github  GitHub is a web-">
+<meta name="keywords" content="git, github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Introduction to Git &amp; Github">
+<meta property="og:url" content="https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/index.html">
+<meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO">
+<meta property="og:description" content="What’s git  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  What’s github  GitHub is a web-">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.imgur.com/nBpsLZD.png">
+<meta property="og:image" content="https://i.imgur.com/HWx44F0.png">
+<meta property="og:image" content="https://i.imgur.com/8YMkKBr.png">
+<meta property="og:image" content="https://i.imgur.com/NmTLoRa.png">
+<meta property="og:updated_time" content="2016-12-17T17:10:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Introduction to Git &amp; Github">
+<meta name="twitter:description" content="What’s git  Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  What’s github  GitHub is a web-">
+<meta name="twitter:image" content="https://i.imgur.com/nBpsLZD.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="小耗子杰瑞 | JERRY SHAO" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
 
-  <link href="https://jerryshao.com/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="小耗子杰瑞 | JERRY SHAO" type="application/atom+xml">
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-  
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-89591790-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+    <!-- custom head -->
+    
 
 </head>
 
 <body>
-  <header id="header" class='normal_mode'>
-    <nav id="main-nav">
-  <ul class='container'>
-    
-      <li><a href="/">Jerry Shao</a></li>
-    
-      <li><a href="https://wiki.jerryshao.com/">Wiki</a></li>
-    
-      <li><a href="/calendar/">Calendar</a></li>
-    
-      <li><a href="/about/">About</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-  </header>
-  <div id="content" class="container">
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">JERRY SHAO</h5>
+          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
   </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-      <time datetime="2016-10-08T22:55:22.000Z"><a href="/2016/10/08/Introduction-to-Git-Github/">周六, 10月 8 2016, 11:55:22 晚上</a></time>
+</aside>
 
-  
-    <h1 class="title">Introduction to Git &amp; Github</h1>
-  
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Introduction to Git &amp; Github</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Introduction to Git &amp; Github</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2016-10-08T22:55:22.000Z" itemprop="datePublished" class="page-time">
+  2016-10-08
+</time>
 
 
+            
+        </h5>
+    </div>
 
-  
-  <div class="tags">
-  	<i class="fa fa-tag"></i>
-    <a href="/tags/git-github/">git, github</a>
-  </div>
+    
 
-<div class="clear"></div>
-      
-    </header>
-    <div class="entry">
-      
-        <h3 id="What’s-git"><a href="#What’s-git" class="headerlink" title="What’s git"></a>What’s git</h3><hr>
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#What’s-git"><span class="post-toc-number">1.</span> <span class="post-toc-text">What’s git</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#What’s-github"><span class="post-toc-number">2.</span> <span class="post-toc-text">What’s github</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#How-to-set-up-your-git-environment"><span class="post-toc-number">3.</span> <span class="post-toc-text">How to set up your git environment</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Mac-OS"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Mac OS</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Windows"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Windows</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#How-to-set-up-your-github-account"><span class="post-toc-number">4.</span> <span class="post-toc-text">How to set up your github account</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-your-first-open-source-project"><span class="post-toc-number">5.</span> <span class="post-toc-text">Create your first open-source project</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Create-amp-initialize-your-git-project"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">Create &amp; initialize your git project</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Remote-with-github-project"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">Remote with github project</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Add-amp-commit-your-project-code"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">Add &amp; commit your project code</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Push-to-github"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">Push to github</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Introduction-to-Git-Github"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Introduction to Git & Github</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2016-10-08 23:55:22" datetime="2016-10-08T22:55:22.000Z"  itemprop="datePublished">2016-10-08</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h3 id="What’s-git"><a href="#What’s-git" class="headerlink" title="What’s git"></a>What’s git</h3><hr>
 <blockquote>
 <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
 </blockquote>
@@ -128,7 +226,13 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
 </ol>
 <p><br></p>
 <h3 id="How-to-set-up-your-github-account"><a href="#How-to-set-up-your-github-account" class="headerlink" title="How to set up your github account"></a>How to set up your github account</h3><hr>
-<p>Once your github account has been created, go to <strong>Settings - SSH&amp;GPG Keys</strong> page, paste your ssh key as a new record.<br><img src="https://i.imgur.com/nBpsLZD.png" alt=""></p>
+<p>Once your github account has been created, go to <strong>Settings - SSH&amp;GPG Keys</strong> page, paste your ssh key as a new record.<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.imgur.com/nBpsLZD.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></p>
 <p><br></p>
 <h3 id="Create-your-first-open-source-project"><a href="#Create-your-first-open-source-project" class="headerlink" title="Create your first open-source project"></a>Create your first open-source project</h3><hr>
 <h4 id="Create-amp-initialize-your-git-project"><a href="#Create-amp-initialize-your-git-project" class="headerlink" title="Create &amp; initialize your git project"></a>Create &amp; initialize your git project</h4><ol>
@@ -159,126 +263,320 @@ GitHub is a web-based Git repository hosting service. It offers all of the distr
 <p><br></p>
 <h4 id="Push-to-github"><a href="#Push-to-github" class="headerlink" title="Push to github"></a>Push to github</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 <hr>
-<p>Once you finish these steps, your first git project is ready to view on github.<br><img src="https://i.imgur.com/8YMkKBr.png" alt=""></p>
-<p><img src="https://i.imgur.com/NmTLoRa.png" alt=""></p>
+<p>Once you finish these steps, your first git project is ready to view on github.<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.imgur.com/8YMkKBr.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.imgur.com/NmTLoRa.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+        </div>
 
-      
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2016-12-17T17:10:15.000Z" itemprop="dateUpdated">2016-12-17 17:10:15</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2016/10/08/Introduction-to-Git-Github/" target="_blank" rel="external">https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/</a>
+        
     </div>
+    
     <footer>
-      
-        
-          <!-- 网易云跟帖评论插件通用代码 -->
-<div class="netease">
-	<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-	<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-	<script>
-	var cloudTieConfig = {
-	  url: document.location.href, 
-	  sourceId: "",
-	  productKey: "9bd403a91dab41d0a68ff7e59e391553",
-	  target: "cloud-tie-wrapper"
-	};
-	var yunManualLoad = true;
-	Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-	</script>
-</div>
-<!-- 网易云跟帖代码结束 -->
+        <a href="https://jerryshao.com">
+            <img src="/img/avatar.jpg" alt="JERRY SHAO">
+            JERRY SHAO
+        </a>
+    </footer>
+</blockquote>
 
         
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git-github/">git, github</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/&title=《Introduction to Git & Github》 — 小耗子杰瑞 | JERRY SHAO&pic=https://jerryshao.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/&title=《Introduction to Git & Github》 — 小耗子杰瑞 | JERRY SHAO&source=What’s git
+
+Git is a free and open source distributed version control system ..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Introduction to Git & Github》 — 小耗子杰瑞 | JERRY SHAO&url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/&via=https://jerryshao.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2016/11/25/install-latest-mysql-connector-on-windows/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Install the latest mysql-connector-python on windows</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/07/08/how-to-get-full-driving-license-in-ireland/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">爱尔兰驾照——路考篇</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-<div id="gitment"></div>
-<!-- 主页不要加载gitment -->
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>JERRY SHAO &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/&title=《Introduction to Git & Github》 — 小耗子杰瑞 | JERRY SHAO&pic=https://jerryshao.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/&title=《Introduction to Git & Github》 — 小耗子杰瑞 | JERRY SHAO&source=What’s git
+
+Git is a free and open source distributed version control system ..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Introduction to Git & Github》 — 小耗子杰瑞 | JERRY SHAO&url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/&via=https://jerryshao.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://jerryshao.com/2016/10/08/Introduction-to-Git-Github/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJ0lEQVR42u3aQW7DMAwEwPz/0y7QW5E02RXdApZHpyCxZI8PjEjx8YjH8T2SX4+n8dv1z7++n3XCwMDAuCzjeDvOZSQP+n61X1fAwMC4ASNfrgW067dzMTAwMJLPSXhtZ2FgYGBMAm6bpq4hMTAwMNaS2Dw1TZB5cD85F8fAwLggoz0Y+M/Pf3i+gYGBcRHGUY58nfbKPMi+WAEDA2NrRrJRa7d08/Car1k8HAYGxmUZbTksb/Nqy235QemLKzEwMG7AmLRn/cWRZ55OR9MwMDAuzsiL+Plmbo00mYWBgXEfRls4mzxW+2sRcDEwMLZjHINx1mHnGvLH9xgYGFsz2rJaW2Kbbx+LvwQMDIxNGZOkMblxUvpPUugPLxEDA2NrRtvg1T5cdMulzBsDA+OejHZCXdWLU9N8Q/mYuzEwMC7FSCavBda6cFamshgYGHsz3hfa8iaMtlSXl/lOqBdiYGBsx0hCZx6O2xaNxVeDgYGxNWONd9ZLSTaX7WoYGBj7MZKt4STJbLeSi6EWAwPjBozJjZOwmD90W4b70DOCgYGxBaMoacVXTtrF1s4lMTAw9mYc5Vhr1JgkrsX/BgYGxqaMtsbeFsUm6W5+XwwMjDsw8oQzPwCYvLM8ucXAwLgbYy25zefWuXW7JgYGBsa4eSJvF8vDPQYGBsa5zRN5IG6PSDEwMO7DaB9ocgg64X0IuBgYGJsy1loc2qautSJaUW7DwMDYk/EFIVOyUFVeTWsAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 <script>
-var gitment = new Gitment({
-  owner: 'jerry-shao',
-  repo: 'jerry-shao.github.io',
-  oauth: {
-    client_id: '99cea3b02918f431ef43',
-    client_secret: '501ae6a200995c0b0e9547e13861ffabaaca225f',
-  },
-})
-gitment.render('gitment')
-</script>
- 
-
-
-
-
-
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div>
-  
-  &copy; 2015 - 2018 JERRY SHAO <a href="http://www.miibeian.gov.cn/" title="鲁ICP备15006756号-1" target="_blank" rel="noopener">鲁ICP备15006756号-1</a>
-  
-</div>
-Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>. Hosted on <a href="https://pages.github.com/" title="Github Pages" target="_blank" rel="noopener">Github Pages</a>. <a href="https://status.jerryshao.com/" title="Status" target="_blank" rel="noopener">Status</a>
- <div class="clearfix"></div>
- <script src="//rum-static.pingdom.net/pa-5ae8925e29ccc5000600007d.js" async></script>
-</footer>
-  
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
-
-
-
-    <script type="text/javascript">
-        (function(){
-
-            $(window).scroll(function(){
-
-                var scrollTop = $(window).scrollTop();
-                if ( scrollTop >200 ){
-                    $("#main-nav").removeClass('normal_mode').addClass('top_mode');
-                } else{
-                    $("#main-nav").removeClass('top_mode').addClass('normal_mode');
-                }
-
-            });
-
-        })();
-    </script>
-
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox({
-      'titlePosition': 'inside'
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
     });
-  })(jQuery);
-  </script>
-
-
-
-
-<script type="text/javascript">
-  
-  $(function(){
-
-    $('.title').hover(
-      function() {      
-        $(this).stop().animate(
-          {'marginLeft': '10px'}, 200
-        );   
-      }, 
-      function() {       
-        $(this).stop().animate({'marginLeft': '0px'}, 200);      
-      
-    });   
-
-  });
-
+})();
 </script>
+
 
 
 </body>
