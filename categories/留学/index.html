@@ -69,29 +69,22 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect">
-              <a href="/archives"  >
-                <i class="icon icon-lg icon-archives"></i>
-                Archives
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags"  >
-                <i class="icon icon-lg icon-tags"></i>
-                Tags
-              </a>
-            </li>
-        
             <li class="waves-block waves-effect active">
-              <a href="/categories"  >
+              <a href="/categories/"  >
                 <i class="icon icon-lg icon-th-list"></i>
-                Categories
+                分类 / Categories
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="https://github.com/yscoder" target="_blank" >
+              <a href="https://wiki.jerryshao.com/" target="_blank" >
+                <i class="icon icon-lg icon-wiki"></i>
+                维基 / Wiki
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/jerry-shao" target="_blank" >
                 <i class="icon icon-lg icon-github"></i>
                 Github
               </a>
@@ -100,7 +93,14 @@
             <li class="waves-block waves-effect">
               <a href="http://www.weibo.com/ysweb" target="_blank" >
                 <i class="icon icon-lg icon-weibo"></i>
-                Weibo
+                微博 / Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/"  >
+                <i class="icon icon-lg icon-about"></i>
+                关于 / About
               </a>
             </li>
         
@@ -238,7 +238,7 @@
                 
                 <a href="http://www.miitbeian.gov.cn/" target="_blank">鲁ICP备15006756号-1</a><br>
                 
-                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme designed <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>. Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a>.
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>. Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a>.
             </span>
         </p>
     </div>
@@ -338,10 +338,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = '喂！回来阿！';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = '嘿嘿';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
