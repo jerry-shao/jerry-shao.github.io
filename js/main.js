@@ -91,9 +91,9 @@
         },
         fixedHeader: function (top) {
             if (top > header.clientHeight) {
-                header.classList.add('fixed');
+                // header.classList.add('fixed');
             } else {
-                header.classList.remove('fixed');
+                // header.classList.remove('fixed');
             }
         },
         toc: (function () {
