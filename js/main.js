@@ -149,7 +149,7 @@
 
             return {
                 fixed: function (top) {
-                    top >= bannerH - headerH ? toc.classList.add('fixed') : toc.classList.remove('fixed');
+                    // top >= bannerH - headerH ? toc.classList.add('fixed') : toc.classList.remove('fixed');
                 },
                 actived: function (top) {
                     for (i = 0, len = titles.length; i < len; i++) {
@@ -507,13 +507,13 @@
         e.preventDefault();
     }, false);
 
-    d.addEventListener('scroll', function () {
-        var top = rootScollTop();
-        Blog.toggleGotop(top);
-        Blog.fixedHeader(top);
-        Blog.toc.fixed(top);
-        Blog.toc.actived(top);
-    }, false);
+    // d.addEventListener('scroll', function () {
+    //     var top = rootScollTop();
+    //     Blog.toggleGotop(top);
+    //     Blog.fixedHeader(top);
+    //     Blog.toc.fixed(top);
+    //     Blog.toc.actived(top);
+    // }, false);
 
     if (w.BLOG.SHARE) {
         Blog.share()
