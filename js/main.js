@@ -99,12 +99,12 @@
         toc: (function () {
             var toc = $('#post-toc');
 
-            if (!toc || !toc.children.length) {
-                return {
-                    fixed: noop,
-                    actived: noop
-                }
-            }
+            // if (!toc || !toc.children.length) {
+            //     return {
+            //         fixed: noop,
+            //         actived: noop
+            //     }
+            // }
 
             var bannerH = $('.post-header').clientHeight,
                 headerH = header.clientHeight,
