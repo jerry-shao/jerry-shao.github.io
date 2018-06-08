@@ -451,13 +451,13 @@
         w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
     });
 
-    w.addEventListener('DOMContentLoaded', function () {
-        Blog.waterfall();
-        var top = rootScollTop();
-        Blog.toc.fixed(top);
-        Blog.toc.actived(top);
-        Blog.page.loaded();
-    });
+    // w.addEventListener('DOMContentLoaded', function () {
+    //     Blog.waterfall();
+    //     var top = rootScollTop();
+    //     Blog.toc.fixed(top);
+    //     Blog.toc.actived(top);
+    //     Blog.page.loaded();
+    // });
 
     var ignoreUnload = false;
     var $mailTarget = $('a[href^="mailto"]');
