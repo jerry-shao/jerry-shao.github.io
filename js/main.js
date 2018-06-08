@@ -99,12 +99,12 @@
         toc: (function () {
             var toc = $('#post-toc');
 
-            // if (!toc || !toc.children.length) {
-            //     return {
-            //         fixed: noop,
-            //         actived: noop
-            //     }
-            // }
+            if (!toc || !toc.children.length) {
+                return {
+                    fixed: noop,
+                    actived: noop
+                }
+            }
 
             var bannerH = $('.post-header').clientHeight,
                 headerH = header.clientHeight,
@@ -451,13 +451,13 @@
         w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
     });
 
-    // w.addEventListener('DOMContentLoaded', function () {
-    //     Blog.waterfall();
-    //     var top = rootScollTop();
-    //     Blog.toc.fixed(top);
-    //     Blog.toc.actived(top);
-    //     Blog.page.loaded();
-    // });
+    w.addEventListener('DOMContentLoaded', function () {
+        Blog.waterfall();
+        var top = rootScollTop();
+        Blog.toc.fixed(top);
+        Blog.toc.actived(top);
+        Blog.page.loaded();
+    });
 
     var ignoreUnload = false;
     var $mailTarget = $('a[href^="mailto"]');
@@ -507,13 +507,13 @@
         e.preventDefault();
     }, false);
 
-    // d.addEventListener('scroll', function () {
-    //     var top = rootScollTop();
-    //     Blog.toggleGotop(top);
-    //     Blog.fixedHeader(top);
-    //     Blog.toc.fixed(top);
-    //     Blog.toc.actived(top);
-    // }, false);
+    d.addEventListener('scroll', function () {
+        var top = rootScollTop();
+        Blog.toggleGotop(top);
+        Blog.fixedHeader(top);
+        Blog.toc.fixed(top);
+        Blog.toc.actived(top);
+    }, false);
 
     if (w.BLOG.SHARE) {
         Blog.share()
