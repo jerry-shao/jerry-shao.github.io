@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-89591790-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>初次使用Hexo遇到的一些问题 | 小耗子杰瑞 | JERRY SHAO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo">
+    <meta name="description" content="今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 ) 安装Hexo报错安装流程是按照Node.js官方指导，下载安装包一步一步安装，Node.js和npm同时由Node.js提供的包安装。 此时执行 12node -vnpm -v 版本号正常显示 问题：安装Hexo，执行以下命令时报错。 1npm instal">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初次使用Hexo遇到的一些问题">
+<meta property="og:url" content="https://jerryshao.com/2015/07/29/transfer-to-hexo/index.html">
+<meta property="og:site_name" content="小耗子杰瑞 | JERRY SHAO">
+<meta property="og:description" content="今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 ) 安装Hexo报错安装流程是按照Node.js官方指导，下载安装包一步一步安装，Node.js和npm同时由Node.js提供的包安装。 此时执行 12node -vnpm -v 版本号正常显示 问题：安装Hexo，执行以下命令时报错。 1npm instal">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2016-03-21T20:20:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="初次使用Hexo遇到的一些问题">
+<meta name="twitter:description" content="今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 ) 安装Hexo报错安装流程是按照Node.js官方指导，下载安装包一步一步安装，Node.js和npm同时由Node.js提供的包安装。 此时执行 12node -vnpm -v 版本号正常显示 问题：安装Hexo，执行以下命令时报错。 1npm instal">
+    
+        <link rel="alternate" type="application/atom+xml" title="小耗子杰瑞 | JERRY SHAO" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">JERRY SHAO</h5>
+          <a href="mailto:com.jerryshao@jerryshao.com" title="com.jerryshao@jerryshao.com" class="mail">com.jerryshao@jerryshao.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页 / Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类 / Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://wiki.jerryshao.com/" target="_blank" >
+                <i class="icon icon-lg icon-wikipedia-w"></i>
+                维基 / Wiki
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/jerry-shao" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/jerryshaokkk" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博 / Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/"  >
+                <i class="icon icon-lg icon-address-card"></i>
+                关于 / About
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">初次使用Hexo遇到的一些问题</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">初次使用Hexo遇到的一些问题</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2015-07-29T14:40:46.000Z" itemprop="datePublished" class="page-time">
+  2015-07-29
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Web/">Web</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装Hexo报错"><span class="post-toc-text">安装Hexo报错</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#更改主题后本地显示正常，部署后无法加载CSS"><span class="post-toc-text">更改主题后本地显示正常，部署后无法加载CSS</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-transfer-to-hexo"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">初次使用Hexo遇到的一些问题</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2015-07-29 15:40:46" datetime="2015-07-29T14:40:46.000Z"  itemprop="datePublished">2015-07-29</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Web/">Web</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 )</p>
+<h3 id="安装Hexo报错"><a href="#安装Hexo报错" class="headerlink" title="安装Hexo报错"></a>安装Hexo报错</h3><p>安装流程是按照Node.js官方指导，下载安装包一步一步安装，Node.js和npm同时由Node.js提供的包安装。</p>
+<p>此时执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>版本号正常显示</p>
+<p>问题：安装Hexo，执行以下命令时报错。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>因错误信息中注明no permission to access，以为是权限问题。</p>
+<p>然后执行命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>错误依然抛出。</p>
+<p><em>后来在<a href="http://stackoverflow.com/questions/15633029/npm-no-longer-working" target="_blank" rel="noopener">StackOverflow</a>找到解决办法：</em></p>
+<p>原因出在OS X版npm安装包上，需要下载npm源代码重新Make并安装。</p>
+<ol>
+<li><p>通过执行以下命令下载npm源代码重Make并安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> http://github.com/isaacs/npm.git</span><br><span class="line"><span class="built_in">cd</span> npm</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="2">
+<li><p>安装Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>   此时hexo已经正确安装。</p>
+<hr>
+<h3 id="更改主题后本地显示正常，部署后无法加载CSS"><a href="#更改主题后本地显示正常，部署后无法加载CSS" class="headerlink" title="更改主题后本地显示正常，部署后无法加载CSS"></a>更改主题后本地显示正常，部署后无法加载CSS</h3><p>使用默认主题landscape时，本地和部署后都可以正常显示。然而更换主题后，本地测试正常，部署后排版错乱，显然没有正确加载所需的CSS样式。</p>
+<p>问题出在Hexo站点根目录的_config.yml文件上。</p>
+<p><em>解决方法：</em></p>
+<ul>
+<li>最初测试时，为了不影响站点使用，我将站点绑定至二级域名pages.jerryshao.com，并将_config.yml文件中url属性设置为pages.jerryshao.com，此时本地和远端均正常显示。</li>
+<li>在将根域名解析过去以后，_config.yml中url属性没有及时更改，且该属性不会影响本地测试。将url改为新的网站地址，CSS样式加载正常，问题解决。</li>
+<li>在几个平台回答了遇到同样问题的网友，大概都是因为忘记修改_config.yml文件中url属性所致。</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+
+        
+        如果读完使你产生了一些思考，就请我喝一杯咖啡吧！
+        
+    </div>
+    
+    <footer>
+        <a href="https://jerryshao.com">
+            <img src="/img/avatar.jpg" alt="JERRY SHAO">
+            JERRY SHAO
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://jerryshao.com/2015/07/29/transfer-to-hexo/&title=《初次使用Hexo遇到的一些问题》 — 小耗子杰瑞 | JERRY SHAO&pic=https://jerryshao.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://jerryshao.com/2015/07/29/transfer-to-hexo/&title=《初次使用Hexo遇到的一些问题》 — 小耗子杰瑞 | JERRY SHAO&source=今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 )
+安装Hexo..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jerryshao.com/2015/07/29/transfer-to-hexo/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《初次使用Hexo遇到的一些问题》 — 小耗子杰瑞 | JERRY SHAO&url=https://jerryshao.com/2015/07/29/transfer-to-hexo/&via=https://jerryshao.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://jerryshao.com/2015/07/29/transfer-to-hexo/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2015/08/09/push-to-two-repos/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Git同时推送到多个远程库</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2015/05/18/爱尔兰驾照考试-理论篇/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">爱尔兰驾照考试-理论篇</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            id: 'Wed Jul 29 2015 15:40:46 GMT+0100',
+            owner: 'jerry-shao',
+            repo: 'jerry-shao.github.io',
+            oauth: {
+                client_id: '03f1fb9293e8b468cef9',
+                client_secret: 'd8bbded53e090f696b18ddacecbd6000aada26f2',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我喝杯咖啡吧~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>JERRY SHAO &copy; 2014 - 2020</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">鲁ICP备15006756号-1</a><br>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">yscoder</a>. Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a>. Status: <a href="https://status.jerryshao.com/" target="_blank">Operational</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://jerryshao.com/2015/07/29/transfer-to-hexo/&title=《初次使用Hexo遇到的一些问题》 — 小耗子杰瑞 | JERRY SHAO&pic=https://jerryshao.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://jerryshao.com/2015/07/29/transfer-to-hexo/&title=《初次使用Hexo遇到的一些问题》 — 小耗子杰瑞 | JERRY SHAO&source=今天把Blog从Wordpress迁移到了Hexo，初次使用静态Blog，遇到了一些问题，整理如下。( 部分问题可能仅存在于OS X系统 )
+安装Hexo..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://jerryshao.com/2015/07/29/transfer-to-hexo/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《初次使用Hexo遇到的一些问题》 — 小耗子杰瑞 | JERRY SHAO&url=https://jerryshao.com/2015/07/29/transfer-to-hexo/&via=https://jerryshao.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://jerryshao.com/2015/07/29/transfer-to-hexo/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKUlEQVR42u3ay3KDMAwF0Pz/T9OZrrKBuZJIWuzDiml4+LC4tSW/XvFx/B7v5+9/ObsmOT87Xp84MDAwHstIHnc26Oth5R/i+r0RFQMDYwNGErLXd/Wi8/qTJWPDwMDASCIyCcd8oBgYGBjzwL0rTP/4/wYGBsYDGUlEJhPESSntS2txDAyMBzJ6jYHvnH+8v4GBgfHvGUfryJe7eatgNB4MDIylGdVFaTJNzJegyfK1EMQYGBiLMiYB+h1esujFwMDYgZG3J/MGZ68NkGdpIb8xMDAezvjEEJNfq+W2aPKKgYGxKKM3lEn/YR7Tp1VDDAyMRRlJ8CUvS6aV9zY1MTAw9mFUtzj0Cvp5SS7/lBgYGPswJo3GXnGtGspJ6wIDA2M3RvnmIFLzpyVNgsIiFgMDYwlG9bbeVox8Othb7mJgYKzNqO5eSAr9vQ8xCWIMDIx9GPOC/pzduwYDA2NtRrVhmZf7r6eMR+soF9owMDCWYOSvzFsI1S0UvSnjadUQAwNjA8Zdrcde2+A69G+Y22JgYDycUeh5Fotrk8pY4WNhYGAszZhHZ3JlL17L7QoMDIzlGL2CV/6CXvmsuskDAwNjbUZv40W1ZFbdPDHZloGBgbEq465YrLYhkzZD3orAwMDYgVHdnnVvsOahf8rDwMDAKLYtJxsp8k0eGBgYGEkRPwEk0VmFYWBg7MmYLDurU7p7n4+BgbEDo9cY6DU+8+DuxTQGBsZyjB+n7kupnYP4ogAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '喂！回来阿！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '嘿嘿';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
